@@ -6,7 +6,7 @@ import firebase_admin
 from firebase_admin import credentials, db
 
 # Load your trained model
-model = tf.keras.models.load_model('PhytoFinder.keras')
+model = tf.keras.models.load_model('phytofinder.keras')
 
 # Class labels
 class_names = ['neem', 'tulsi']  # Update this as needed
@@ -15,7 +15,7 @@ class_names = ['neem', 'tulsi']  # Update this as needed
 cred = credentials.Certificate(dict(st.secrets["firebase"]))
 if not firebase_admin._apps:
     firebase_admin.initialize_app(cred, {
-        'databaseURL': 'https://phytofinder-1859a-default-rtdb.firebaseio.com/'
+        'databaseURL': 'https://fir-b0e7f-default-rtdb.firebaseio.com/'
     })
 
 # Firebase reference
