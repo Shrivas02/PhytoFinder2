@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "phytofinder-1859a",
+  "private_key_id": "de48d4fa09c54bfe9703009e97a3c09bf0fcd0ad",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCych/h+zRGKGrT\nssFKhqLylk6HCYoxT+d6tei2XKYhLp7A7taQFPiwOPVMtrxvCrhE3VOI3zD9kxDU\nIf+wu7InWsrEGm42WPSPpzL08AN6mSvrvKM6HB7Kwei8i62f01VKVtrojibpxCkX\nXbfZkxw90e8QIo8K4IqygFCzTqL2StVru+HE51W/vTHIRFbJrajIV9jackFDBHnt\n5cyBw/uZf1yRlDvk1jWXzn0FdGkLIu6ZqvEVkz7ifX5QR/H2Ay+cQuqsRiI3VKNE\n1ulV4YhzehX36zd32YUY4/OxkkBkc6PuIW1nl/wH6FY6RQwQjP1SU3DZzl9WCDXz\nAfokNvLTAgMBAAECggEARnOlX9CQdmSNrLAl/TkDy3gJX+oly8tKzllUm+8fTfl8\nhxqkzrTg7J5IRrXc1pBqaRHi4aaQzoSKP95+dzXbpAsGA/+VZNKhF7hA95BtJzGj\nNArBfPdONunw68PP1EqZIWUCP4+kEGY4fPes1vNsUoH4eyvRws8dI1VixzA0Sb1g\nEpWEhxTq3W5HOWm/wDnxPmhZst13ktoMaMamOrlydPsv4UhEQrR9oJfINVt5vHxR\nLC+40ALXljw8QOslAg8R1++v4kWviKd3yUXXT7H3wJ/Y8mOeTyZyCFQW1BKWjcfw\nAymIpIThc2WYPH/56D4/66kIeeagXsm0L/AESUIXXQKBgQDZk0StZ7/QAp/pVO/z\n/fHPZOlF67amgw/1n+A0Pyq+iTPe0zQ+3HVTaQP+KBn1Ugg5iyj3Yx/BHAxZuf0S\n4lDqCd1ARwhH7X9DM0lPtgLUecQB2gkVqKVcQjq1Bel4HPzHIfGYyKjwPr/stN9d\nfnBmOIZ+ot4HW2Op8OMCmWK+RQKBgQDR9ckNAobV/+ghooJOkCLKaRce4TnbOax8\nj0B36w96lvMYbORnNF6GhlaSET68/2y9tXfwId6w3JJK5lSMYbG6g0x4+IlZn+fS\ns7VHXwCwauvcdg1hn1ltlq5RnugpVvfYtJqvzNTWXaUtk/Brkmv6NDuMgDtfF/j3\nifKPlZHqNwKBgHn6rHgjQFBYCFsCOXyrFFRXmMiQe9gihmIIfeQMveQQe7oi4pmT\nc1uN9qUYymTU1rOcJx16vyS+mtX7Bbz+kKqFWTteF3Br3/tG14UO38tLcO4w1QMF\nh5+PqeYvKFMkvTrO9unXJY97PpJwXQHHjzBf5Fc+7Adn3xo5aKveXpOZAoGAfkRX\nHdjYKBiXjKrDvOWX1qyut+ZxOfMMVXh9J+EYVPw0xAqwrZRkCHj/1SZD2buutMRO\nlf54g1qTLDIqxKX4EZfmxJWLXHf7Hc7vhTWQH4idwd7JG12OlYZZ3UI4kqv3r76l\njHYdxbFZpfhjTP4oq7b/3PY9PmoXUx8F3e3wa68CgYEAuPNL0g1Vdr60qH2WQeyK\nN0dPjIGrGIIy7feFJj2tZQo7G8o4KzQ6yXVICLOWQj4XvJ7gRyhdsSBM/HhoL2jk\na1NA9+5quPDfW8/XeK3kn06DsT2uaIDZsjwIOt30r7dDel/A9M/nKzfhy0yMb1tZ\n9Joeolv3V2gP0TCvx0Puz1Q=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@phytofinder-1859a.iam.gserviceaccount.com",
+  "client_id": "101989538185478148991",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40phytofinder-1859a.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
