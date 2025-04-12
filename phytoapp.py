@@ -9,6 +9,7 @@ from firebase_admin import credentials, db
 # Load your trained model
 model = tf.keras.models.load_model('phytofinder.keras')
 
+
 # Class labels
 class_names = ['neem', 'tulsi']  # Update this as needed
 
