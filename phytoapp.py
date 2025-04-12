@@ -13,7 +13,7 @@ model = tf.keras.models.load_model('phytofinder.keras')
 class_names = ['neem', 'tulsi']  # Update this as needed
 
 # Load Firebase credentials from secrets (for Streamlit Cloud)
-cred = credentials.Certificate(dict(st.secrets["firebase"]))
+#cred = credentials.Certificate(dict(st.secrets["firebase"]))
 if not firebase_admin._apps:
     firebase_admin.initialize_app(cred, {
         'databaseURL': 'https://fir-b0e7f-default-rtdb.firebaseio.com/'
