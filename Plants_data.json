@@ -1,0 +1,194 @@
+<<<<<<< HEAD
+{
+    "plant_medicinal_data": {
+      "tulsi": {
+        "Medicinal Uses and Traditional Applications": [
+          "Immune system booster",
+          "Respiratory health (cough, cold, asthma)",
+          "Stress relief (adaptogen)",
+          "Anti-inflammatory and antioxidant"
+        ],
+        "Key Chemical Compounds and Active Ingredients": [
+          "Eugenol",
+          "Ursolic acid",
+          "Flavonoids",
+          "Essential oils"
+        ],
+        "Health Benefits and Diseases Treated": [
+          "Cough, cold, and fever",
+          "Respiratory infections",
+          "Stress and anxiety",
+          "Inflammation and skin conditions"
+        ],
+        "Preparation Methods and Dosage Guidelines": [
+          "Herbal tea: 1–2 tsp of fresh or dried leaves per cup",
+          "Capsules and tinctures: Follow professional dosage advice"
+        ],
+        "Toxicity and Potential Side Effects": [
+          "Generally safe",
+          "Rare allergic reactions",
+          "May cause low blood pressure",
+          "Avoid during pregnancy"
+        ],
+        "Traditional Uses": "Used in Ayurvedic rituals and home remedies for immunity and longevity",
+        "Plant Habitat, Distribution, and Growing Conditions": [
+          "Native to India",
+          "Grows in tropical and subtropical climates",
+          "Requires well-drained soil and full sun"
+        ],
+         "CABI link":[ 
+          "https://www.cabidigitallibrary.org/doi/10.1079/cabicompendium.110287"
+      ],
+       "Youtube link":[
+        "https://youtu.be/uzCGa-PgAbE?si=B1OHQEGF2EjIavTy", 
+        "https://youtube.com/shorts/70PFYNKq1Aw?si=0oqReE2_98FLdF7k", 
+        "https://youtu.be/Ln3W9k9GVIE?si=PDLkjJIi_opU4j9o"
+      ]
+
+      },
+      "neem": {
+        "Medicinal Uses and Traditional Applications": [
+          "Antibacterial and antifungal",
+          "Immune system support",
+          "Blood and liver detoxifier"
+        ],
+        "Key Chemical Compounds and Active Ingredients": [
+          "Azadirachtin",
+          "Nimbin and nimbidin",
+          "Quercetin",
+          "Flavonoids"
+        ],
+        "Health Benefits and Diseases Treated": [
+          "Skin conditions (eczema, acne)",
+          "Malaria and fever",
+          "Diabetes management",
+          "Digestive disorders",
+          "Dental health"
+        ],
+        "Preparation Methods and Dosage Guidelines": [
+          "Neem oil: For external skin use",
+          "Neem powder: 1–2 tsp daily",
+          "Leaves: Used in teas (consult health professional)"
+        ],
+        "Toxicity and Potential Side Effects": [
+          "Toxic in large amounts",
+          "May cause nausea, vomiting, diarrhea",
+          "Potential liver toxicity in excessive use"
+        ],
+        "Traditional Uses": [
+          "Widely used in Ayurveda for detox and skin conditions",
+          "Neem twigs traditionally used for oral hygiene"
+        ],
+        "Plant Habitat, Distribution, and Growing Conditions": [
+          "Native to India",
+          "Grows well in hot, dry climates",
+          "Drought-resistant and hardy in poor soils"
+        ],
+        "CABI link":[
+          "https://www.cabidigitallibrary.org/doi/10.1079/cabicompendium.8112"
+        ],
+        "Youtube link":[
+          "https://youtu.be/wziS1U91trQ?si=Yx5Y6NTjjDtpn0Ot",
+           "https://youtu.be/8uYqg8VwKgU?si=q12HFRthZo0JtaDn "
+        ]
+      }
+    }
+  }
+=======
+{
+    "plant_medicinal_data": {
+      "tulsi": {
+        "Medicinal Uses and Traditional Applications": [
+          "Immune system booster",
+          "Respiratory health (cough, cold, asthma)",
+          "Stress relief (adaptogen)",
+          "Anti-inflammatory and antioxidant"
+        ],
+        "Key Chemical Compounds and Active Ingredients": [
+          "Eugenol",
+          "Ursolic acid",
+          "Flavonoids",
+          "Essential oils"
+        ],
+        "Health Benefits and Diseases Treated": [
+          "Cough, cold, and fever",
+          "Respiratory infections",
+          "Stress and anxiety",
+          "Inflammation and skin conditions"
+        ],
+        "Preparation Methods and Dosage Guidelines": [
+          "Herbal tea: 1–2 tsp of fresh or dried leaves per cup",
+          "Capsules and tinctures: Follow professional dosage advice"
+        ],
+        "Toxicity and Potential Side Effects": [
+          "Generally safe",
+          "Rare allergic reactions",
+          "May cause low blood pressure",
+          "Avoid during pregnancy"
+        ],
+        "Traditional Uses": "Used in Ayurvedic rituals and home remedies for immunity and longevity",
+        "Plant Habitat, Distribution, and Growing Conditions": [
+          "Native to India",
+          "Grows in tropical and subtropical climates",
+          "Requires well-drained soil and full sun"
+        ],
+         "CABI link":[ 
+          "https://www.cabidigitallibrary.org/doi/10.1079/cabicompendium.110287"
+      ],
+       "Youtube link":[
+        "https://youtu.be/uzCGa-PgAbE?si=B1OHQEGF2EjIavTy", 
+        "https://youtube.com/shorts/70PFYNKq1Aw?si=0oqReE2_98FLdF7k", 
+        "https://youtu.be/Ln3W9k9GVIE?si=PDLkjJIi_opU4j9o"
+      ]
+
+      },
+      "neem": {
+        "Medicinal Uses and Traditional Applications": [
+          "Antibacterial and antifungal",
+          "Immune system support",
+          "Blood and liver detoxifier"
+        ],
+        "Key Chemical Compounds and Active Ingredients": [
+          "Azadirachtin",
+          "Nimbin and nimbidin",
+          "Quercetin",
+          "Flavonoids"
+        ],
+        "Health Benefits and Diseases Treated": [
+          "Skin conditions (eczema, acne)",
+          "Malaria and fever",
+          "Diabetes management",
+          "Digestive disorders",
+          "Dental health"
+        ],
+        "Preparation Methods and Dosage Guidelines": [
+          "Neem oil: For external skin use",
+          "Neem powder: 1–2 tsp daily",
+          "Leaves: Used in teas (consult health professional)"
+        ],
+        "Toxicity and Potential Side Effects": [
+          "Toxic in large amounts",
+          "May cause nausea, vomiting, diarrhea",
+          "Potential liver toxicity in excessive use"
+        ],
+        "Traditional Uses": [
+          "Widely used in Ayurveda for detox and skin conditions",
+          "Neem twigs traditionally used for oral hygiene"
+        ],
+        "Plant Habitat, Distribution, and Growing Conditions": [
+          "Native to India",
+          "Grows well in hot, dry climates",
+          "Drought-resistant and hardy in poor soils"
+        ],
+        "CABI link":[
+          "https://www.cabidigitallibrary.org/doi/10.1079/cabicompendium.8112"
+        ],
+        "Youtube link":[
+          "https://youtu.be/wziS1U91trQ?si=Yx5Y6NTjjDtpn0Ot",
+           "https://youtu.be/8uYqg8VwKgU?si=q12HFRthZo0JtaDn "
+        ]
+      }
+    }
+  }
+>>>>>>> 77b65b3 (Add files via upload)
+  
