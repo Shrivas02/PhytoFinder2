@@ -1,0 +1,5 @@
+streamlit
+tensorflow
+firebase-admin
+Pillow
+numpy

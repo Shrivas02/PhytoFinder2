@@ -1,3 +1,4 @@
+
 import streamlit as st
 from PIL import Image
 import tensorflow as tf
@@ -57,3 +58,4 @@ if uploaded_file is not None:
                 st.markdown(f"{value}")
     else:
         st.warning(f"No medicinal data found for '{predicted_class}'")
+
