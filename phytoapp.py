@@ -9,26 +9,19 @@ from firebase_admin import credentials, db
 model = tf.keras.models.load_model('phytofinder.keras')
 
 # Class labels
-class_names = ['neem', 'tulsi']  # Update this as needed
+class_names = ['neem', 'tulsi']  # Update with your full class list
 
 # Initialize Firebase only once
 if not firebase_admin._apps:
-    cred = credentials.Certificate(dict(st.secrets["firebase"]))
+    firebase_creds = st.secrets["firebase"]
+    cred = credentials.Certificate(firebase_creds)
     firebase_admin.initialize_app(cred, {
-        'databaseURL': 'https://fir-b0e7f-default-rtdb.firebaseio.com/'
+        'databaseURL': 'https://fir-b0e7f-default-rtdb.firebaseio.com/'  # update if different
     })
 
-
 # Firebase DB reference
-        # Load Firebase credentials from secrets (for Streamlit Cloud)
-firebase_creds = st.secrets["firebase"]
-cred = credentials.Certificate(firebase_creds)
-
-# Initialize Firebase Admin SDK
-firebase_admin.initialize_app(cred)
 ref = db.reference('/plant_medicinal_data')
 data = ref.get()
-
 
 # Streamlit UI
 st.title("🌿 PhytoFinder")
@@ -52,10 +45,6 @@ if uploaded_file is not None:
 
     # Firebase lookup
     plant_name = predicted_class.lower()
-    st.write("🧪 Predicted class:", predicted_class)
-    st.write("🔍 Plant name used for Firebase:", plant_name)
-    st.write("📋 Firebase keys found:", list(data.keys()))
-
     plant_data = data.get(plant_name)
 
     if plant_data:
