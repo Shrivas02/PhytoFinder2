@@ -37,7 +37,7 @@ if uploaded_file is not None:
     predicted_class = class_names[np.argmax(prediction)]
 
     st.markdown(f"### 🌱 Identified as: **{predicted_class}**")
-    st.info(plant_desc)
+    
 
     # Fetch medicinal info from Firebase
 
