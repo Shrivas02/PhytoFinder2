@@ -35,19 +35,16 @@ if uploaded_file is not None:
 
     st.markdown(f"### 🌱 Identified as: **{plant_name}**")
 
-    # Show info from JSON
-    with open("Plants_data.json", "r") as f:
-       plant_info = json.load(f)
-
- if plant_name in plant_info:
-    st.subheader("🌿 Medicinal Information")
-    for key, value in plant_info[plant_name].items():
-        st.markdown(f"**{key}**")
-        if isinstance(value, list):
-            for item in value:
-                st.markdown(f"- {item}")
-        else:
-            st.markdown(f"{value}")
-else:
-    st.warning(f"No medicinal info found for: `{plant_name}`")
-    st.write("Available keys in JSON:", list(plant_info.keys()))
+    # Display medicinal information
+    if plant_name in plant_info:
+        st.subheader("🌿 Medicinal Information")
+        for key, value in plant_info[plant_name].items():
+            st.markdown(f"**{key}**")
+            if isinstance(value, list):
+                for item in value:
+                    st.markdown(f"- {item}")
+            else:
+                st.markdown(f"{value}")
+    else:
+        st.warning(f"No medicinal info found for: `{plant_name}`")
+        st.write("Available keys in JSON:", list(plant_info.keys()))
