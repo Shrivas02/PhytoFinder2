@@ -15,12 +15,19 @@ class_names = ['neem', 'tulsi']  # Update this as needed
 if not firebase_admin._apps:
     cred = credentials.Certificate(dict(st.secrets["firebase"]))
     firebase_admin.initialize_app(cred, {
-        'databaseURL': 'https://plantmodel-c0234-default-rtdb.firebaseio.com/'
-    })
+        'databaseURL': 'https://fir-b0e7f-default-rtdb.firebaseio.com/'
+
 
 # Firebase DB reference
+        # Load Firebase credentials from secrets (for Streamlit Cloud)
+firebase_creds = st.secrets["firebase"]
+cred = credentials.Certificate(firebase_creds)
+
+# Initialize Firebase Admin SDK
+firebase_admin.initialize_app(cred)
 ref = db.reference('/plant_medicinal_data')
 data = ref.get()
+
 
 # Streamlit UI
 st.title("🌿 PhytoFinder")
