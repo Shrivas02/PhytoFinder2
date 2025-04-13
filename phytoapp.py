@@ -36,10 +36,10 @@ if uploaded_file is not None:
     st.markdown(f"### 🌱 Identified as: **{plant_name}**")
 
     # Show info from JSON
-with open("Plants_data.json", "r") as f:
-    plant_info = json.load(f)
+    with open("Plants_data.json", "r") as f:
+       plant_info = json.load(f)
 
-   if plant_name in plant_info:
+ if plant_name in plant_info:
     st.subheader("🌿 Medicinal Information")
     for key, value in plant_info[plant_name].items():
         st.markdown(f"**{key}**")
