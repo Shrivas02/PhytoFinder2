@@ -1,3 +1,4 @@
+
 import streamlit as st
 from PIL import Image
 import tensorflow as tf
@@ -9,16 +10,12 @@ from firebase_admin import credentials, db
 model = tf.keras.models.load_model('phytofinder.keras')
 
 # Class labels
-class_names = ['neem', 'tulsi']  # Update this list to your actual labels
+class_names = ['neem', 'tulsi']  # Update this as needed
 
-# Initialize Firebase (only once)
-if not firebase_admin._apps:
-    cred = credentials.Certificate(dict(st.secrets["firebase"]))
-    firebase_admin.initialize_app(cred, {
-        'databaseURL': 'https://your-project-id.firebaseio.com/'  # 🔁 Replace with your actual Firebase DB URL
-    })
+# Load Firebase credentials from secrets (for Streamlit Cloud)
 
-# Firebase DB reference
+
+# Firebase reference
 ref = db.reference('/plant_medicinal_data')
 data = ref.get()
 
@@ -39,20 +36,8 @@ if uploaded_file is not None:
     # Predict
     prediction = model.predict(img_array)
     predicted_class = class_names[np.argmax(prediction)]
-    plant_name = predicted_class.lower()
 
     st.markdown(f"### 🌱 Identified as: **{predicted_class}**")
 
-    # Fetch medicinal info from Firebase
-    plant_data = data.get(plant_name)
-    if plant_data:
-        st.subheader("Medicinal Information")
-        for key, value in plant_data.items():
-            st.markdown(f"**{key}**")
-            if isinstance(value, list):
-                for item in value:
-                    st.markdown(f"- {item}")
-            else:
-                st.markdown(f"{value}")
-    else:
-        st.warning(f"No medicinal info found for `{plant_name}`")
+  
+
