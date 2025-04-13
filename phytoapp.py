@@ -20,8 +20,8 @@ class_names = ['neem', 'tulsi']  # Update with your full class list
 #     })
 
 # Firebase DB reference
-ref = db.reference('/plant_medicinal_data')
-data = ref.get()
+# ref = db.reference('/plant_medicinal_data')
+# data = ref.get()
 
 # Streamlit UI
 st.title("🌿 PhytoFinder")
