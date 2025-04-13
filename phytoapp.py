@@ -44,8 +44,9 @@ if uploaded_file is not None:
     plant_name = predicted_class.lower()
     plant_data = data.get(plant_name)
 
-   if plant_data:
-    st.subheader("Medicinal Information")
+
+if plant_data:
+      st.subheader("Medicinal Information")
     for key, value in plant_data.items():
         st.markdown(f"**{key}**")
         if isinstance(value, list):
