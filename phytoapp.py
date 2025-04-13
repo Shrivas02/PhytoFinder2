@@ -6,10 +6,10 @@ import firebase_admin
 from firebase_admin import credentials, db
 
 # Load your trained model
- model = tf.keras.models.load_model('phytofinder.keras')
+model = tf.keras.models.load_model('phytofinder.keras')
 
 # Class labels
-class_names = ['neem', 'tulsi']  # Update with your full class list
+class_names = ['neem', 'tulsi']  # Update this as needed
 
 # Streamlit UI
 st.title("🌿 PhytoFinder")
@@ -31,4 +31,5 @@ if uploaded_file is not None:
 
     st.markdown(f"### 🌱 Identified as: **{predicted_class}**")
 
+    # Fetch medicinal info from Firebase
    
