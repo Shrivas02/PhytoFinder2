@@ -1,4 +1,3 @@
-
 import streamlit as st
 from PIL import Image
 import tensorflow as tf
@@ -11,13 +10,6 @@ model = tf.keras.models.load_model('phytofinder.keras')
 
 # Class labels
 class_names = ['neem', 'tulsi']  # Update this as needed
-
-# Load Firebase credentials from secrets (for Streamlit Cloud)
-
-
-# Firebase reference
-ref = db.reference('/plant_medicinal_data')
-data = ref.get()
 
 # Streamlit UI
 st.title("🌿 PhytoFinder")
@@ -39,5 +31,20 @@ if uploaded_file is not None:
 
     st.markdown(f"### 🌱 Identified as: **{predicted_class}**")
 
-  
+    # Fetch medicinal info from Firebase
 
+if not firebase_admin._apps:
+    cred = credentials.Certificate(dict(st.secrets["firebase"]))
+    firebase_admin.initialize_app(cred, {
+        'databaseURL': 'https://your-project-id.firebaseio.com/'
+    })
+ref = db.reference('/plant_medicinal_data')
+
+# Reading data
+data = ref.get()
+
+# Writing data
+ref.push({
+    'plant': 'tulsi',
+    'uses': ['cold', 'fever']
+})                  this is my streamlit app code 
