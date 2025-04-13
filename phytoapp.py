@@ -12,12 +12,12 @@ from firebase_admin import credentials, db
 class_names = ['neem', 'tulsi']  # Update with your full class list
 
 # Initialize Firebase only once
-if not firebase_admin._apps:
-    firebase_creds = st.secrets["firebase"]
-    cred = credentials.Certificate(firebase_creds)
-    firebase_admin.initialize_app(cred, {
-        'databaseURL': 'https://fir-b0e7f-default-rtdb.firebaseio.com/'  # update if different
-    })
+# if not firebase_admin._apps:
+#     firebase_creds = st.secrets["firebase"]
+#     cred = credentials.Certificate(firebase_creds)
+#     firebase_admin.initialize_app(cred, {
+#         'databaseURL': 'https://fir-b0e7f-default-rtdb.firebaseio.com/'  # update if different
+#     })
 
 # Firebase DB reference
 ref = db.reference('/plant_medicinal_data')
