@@ -36,7 +36,7 @@ if uploaded_file is not None:
 if not firebase_admin._apps:
     cred = credentials.Certificate(dict(st.secrets["firebase"]))
     firebase_admin.initialize_app(cred, {
-        'databaseURL': 'https://your-project-id.firebaseio.com'
+        'databaseURL': 'https://your-project-id.firebaseio.com/'
     })
 ref = db.reference('/plant_medicinal_data')
 
