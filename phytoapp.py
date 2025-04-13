@@ -47,4 +47,4 @@ data = ref.get()
 ref.push({
     'plant': 'tulsi',
     'uses': ['cold', 'fever']
-})                  this is my streamlit app code 
+})                  
