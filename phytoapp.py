@@ -5,6 +5,13 @@ import numpy as np
 import firebase_admin
 from firebase_admin import credentials, db
 
+# Sample medicinal plants info (for simulation)
+medicinal_plants = {
+    "Tulsi (Holy Basil)": "Used to treat colds, inflammation, malaria, heart disease, and many more,Immune system booster.",
+    "Neem": "Powerful antibacterial and antiviral properties, used for skin disorders.",
+    
+}
+
 # Load your trained model
 model = tf.keras.models.load_model('phytofinder.keras')
 
