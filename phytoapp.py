@@ -7,12 +7,13 @@ import json
 # Load model
 model = tf.keras.models.load_model('phytofinder.keras')
 
-# Class names
-class_names = ['neem', 'tulsi']  # Update as needed
+# Class labels
+class_names = ['neem', 'tulsi']
 
 # Load plant data from JSON
 with open('Plants_data.json', 'r') as f:
-    plant_info = json.load(f)
+    raw_data = json.load(f)
+    plant_info = raw_data["plant_medicinal_data"]  # ✅ Fix applied here
 
 # Streamlit UI
 st.title("🌿 PhytoFinder")
@@ -35,16 +36,20 @@ if uploaded_file is not None:
 
     st.markdown(f"### 🌱 Identified as: **{plant_name}**")
 
-    # Display medicinal information
     if plant_name in plant_info:
         st.subheader("🌿 Medicinal Information")
         for key, value in plant_info[plant_name].items():
             st.markdown(f"**{key}**")
             if isinstance(value, list):
                 for item in value:
-                    st.markdown(f"- {item}")
+                    if "youtu" in item:
+                        st.markdown(f"[🔗 Video Link]({item})")
+                    elif "cabi" in item or "cabidigital" in item:
+                        st.markdown(f"[📘 CABI Resource]({item})")
+                    else:
+                        st.markdown(f"- {item}")
             else:
                 st.markdown(f"{value}")
     else:
         st.warning(f"No medicinal info found for: `{plant_name}`")
-        st.write("Available keys in JSON:", list(plant_info.keys()))
+        st.write("Available keys:", list(plant_info.keys()))
