@@ -47,13 +47,13 @@ if uploaded_file is not None:
 
 if plant_data:
       st.subheader("Medicinal Information")
-    for key, value in plant_data.items():
+for key, value in plant_data.items():
         st.markdown(f"**{key}**")
-        if isinstance(value, list):
-            for item in value:
-                st.markdown(f"- {item}")
-        else:
-            st.markdown(f"{value}")
+if isinstance(value, list):
+   for item in value:
+       st.markdown(f"- {item}")
+else:
+       st.markdown(f"{value}")
 else:
     st.warning(f"No medicinal info found for: `{plant_name}`")
     st.write("Available keys in Firebase:", list(data.keys()))
