@@ -13,17 +13,6 @@ model = tf.keras.models.load_model('phytofinder.keras')
 # Class labels
 class_names = ['neem', 'tulsi']  # Update this as needed
 
-# Check if the firebase key is accessible
-print(st.secrets)  # This will print the contents of the secrets file
-
-cred = credentials.Certificate(dict(st.secrets["firebase"]))
-firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://fir-b0e7f-default-rtdb.firebaseio.com/'
-    })
-
-# Firebase reference
-ref = db.reference('/plant_medicinal_data')
-data = ref.get()
 
 # Streamlit UI
 st.title("🌿 PhytoFinder")
